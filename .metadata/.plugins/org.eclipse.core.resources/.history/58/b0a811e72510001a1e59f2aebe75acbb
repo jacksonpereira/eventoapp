@@ -1,0 +1,8 @@
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<title>EventosApp</title>
+	</head>
+	<body>
+		
+	<body>
+</html>
