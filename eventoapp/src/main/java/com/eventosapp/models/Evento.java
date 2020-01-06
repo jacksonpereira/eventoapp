@@ -1,4 +1,4 @@
-package models;
+package com.eventosapp.models;
 
 public class Evento {
 
