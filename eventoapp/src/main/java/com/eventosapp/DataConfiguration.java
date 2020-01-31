@@ -2,7 +2,6 @@ package com.eventosapp;
 
 import javax.sql.DataSource;
 
-import org.hibernate.boot.model.relational.Database;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -11,7 +10,6 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
 public class DataConfiguration {
-	
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -20,7 +18,7 @@ public class DataConfiguration {
 		dataSource.setUsername("root");
 		dataSource.setPassword("1234");
 		return dataSource;
-	}
+	};
 	
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
@@ -31,6 +29,5 @@ public class DataConfiguration {
 		adapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
 		adapter.setPrepareConnection(true);
 		return adapter;
-		
 	}
 }
